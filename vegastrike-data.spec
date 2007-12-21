@@ -12,6 +12,7 @@ License:	GPL
 Group:		Games/Arcade
 Source0:	%{oname}-data-%{version}.tar.bz2
 URL:		http://vegastrike.sourceforge.net/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	%{oname} >= %{version}
 
