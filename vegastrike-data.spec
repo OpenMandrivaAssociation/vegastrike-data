@@ -1,7 +1,7 @@
 %define	oname	vegastrike
 %define	name	%{oname}-data
 %define	version	0.5.0
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 %define	Summary	Data files for %{oname}
 
 Name:		%{name}
