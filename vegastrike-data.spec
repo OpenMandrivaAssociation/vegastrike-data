@@ -1,7 +1,7 @@
 %define	oname	vegastrike
 %define	name	%{oname}-data
 %define	version	0.5.0
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 %define	Summary	Data files for %{oname}
 
 Name:		%{name}
@@ -41,6 +41,9 @@ rm documentation/*.1 documentation/*.xls
 %{__rm} -rf %{buildroot}
 %{__install} -d %{buildroot}%{_gamesdatadir}/%{oname}
 cp -a * %{buildroot}%{_gamesdatadir}/%{oname}
+# include 'system files' strangely hidden in .vegastrike-0.5.0 directory
+# for whatever reason...otherwise music & other stuff is gone...
+cp -a ./.%{oname}-%{version} %{buildroot}/%{_gamesdatadir}/%{oname}
 
 
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/128x128/apps
@@ -55,6 +58,8 @@ install -p -m 644 vegastrike.xpm \
 %defattr(644,root,root,755)
 %dir %{_gamesdatadir}/%{oname}
 %{_gamesdatadir}/%{oname}/*
+%{_gamesdatadir}/%{oname}/.%{oname}-%{version}/*
+%{_gamesdatadir}/%{oname}/.%{oname}-%{version}/.system
 %{_datadir}/icons/hicolor/128x128/apps/vegastrike.xpm
 
 
