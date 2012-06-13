@@ -20,7 +20,7 @@ Requires:	%{oname} >= %{version}
 %{Summary}
 
 %prep
-%setup -q -n %{oname}-%{version}
+%setup -q 
 # get rid of a few files we have no interest in packaging..
 rm -rf aclocal.m4 configure.ac Makefile.in vegastrike-data.spec stamp-h.in bin
 rm -rf `find -name CVS -type d` `find -name Makefile.am -type f`
