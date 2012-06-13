@@ -58,8 +58,8 @@ install -p -m 644 vegastrike.xpm \
 %defattr(644,root,root,755)
 %dir %{_gamesdatadir}/%{oname}
 %{_gamesdatadir}/%{oname}/*
-%{_gamesdatadir}/%{oname}/.%{oname}-%{version}/*
-%{_gamesdatadir}/%{oname}/.%{oname}-%{version}/.system
+# %{_gamesdatadir}/%{oname}/.%{oname}-%{version}/*
+# %{_gamesdatadir}/%{oname}/.%{oname}-%{version}/.system
 %{_datadir}/icons/hicolor/128x128/apps/vegastrike.xpm
 
 
