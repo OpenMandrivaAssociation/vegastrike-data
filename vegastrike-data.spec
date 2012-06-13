@@ -1,7 +1,7 @@
 %define	oname	vegastrike
 %define	name	%{oname}-data
-%define	version	0.5.0
-%define	release	%mkrel 3
+%define	version	0.5.1.r1
+%define	release	%mkrel 1
 %define	Summary	Data files for %{oname}
 
 Name:		%{name}
@@ -10,7 +10,7 @@ Release:	%{release}
 Summary:	%{Summary}
 License:	GPLv2+
 Group:		Games/Arcade
-Source0:	%{oname}-linux-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.bz2
 URL:		http://vegastrike.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
