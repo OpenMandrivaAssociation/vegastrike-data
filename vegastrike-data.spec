@@ -27,7 +27,7 @@ rm -rf `find -name CVS -type d` `find -name Makefile.am -type f`
 
 # some cleanup
 rm -r cockpits/bomber-cockpit.cpt/#cockpit.xmesh# meshes/supernova.bmp.xmesh~ \
-  modules/.cvsignore modules/builtin `find -name "*.xmesh"`
+ modules/builtin `find -name "*.xmesh"`
 find . -type f -print0 | xargs -0 chmod -x
 chmod +x units/findunits.py modules/webpageize.py
 sed -i 's/\r//g' documentation/mission_howto.txt
