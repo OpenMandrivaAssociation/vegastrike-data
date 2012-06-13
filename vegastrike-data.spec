@@ -43,7 +43,7 @@ rm documentation/*.1 documentation/*.xls
 cp -a * %{buildroot}%{_gamesdatadir}/%{oname}
 # include 'system files' strangely hidden in .vegastrike-0.5.0 directory
 # for whatever reason...otherwise music & other stuff is gone...
-cp -a ./.%{name}-%{version} %{buildroot}/%{_gamesdatadir}/%{oname}
+# cp -a ./.%{name}-%{version} %{buildroot}/%{_gamesdatadir}/%{oname}
 
 
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/128x128/apps
