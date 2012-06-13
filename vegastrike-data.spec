@@ -26,7 +26,7 @@ rm -rf aclocal.m4 configure.ac Makefile.in vegastrike-data.spec stamp-h.in bin
 rm -rf `find -name CVS -type d` `find -name Makefile.am -type f`
 
 # some cleanup
-rm -r cockpits/bomber-cockpit.cpt/#cockpit.xmesh# meshes/supernova.bmp.xmesh~ \
+rm -r cockpits/bomber-cockpit.cpt/#cockpit.xmesh# \
  modules/builtin `find -name "*.xmesh"`
 find . -type f -print0 | xargs -0 chmod -x
 chmod +x units/findunits.py modules/webpageize.py
