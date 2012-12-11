@@ -64,3 +64,59 @@ install -p -m 644 vegastrike.xpm \
 
 
 
+
+
+%changelog
+* Wed Jun 13 2012 Zombie Ryushu <ryushu@mandriva.org> 0.5.1.r1-1mdv2012.0
++ Revision: 805467
+- hidden dir issue?
+- hidden dir issue?
+- on copy issue
+- no xmwesh
+- no cvsignore
+- fix setup name
+- Upgrade to 0.5.1
+
+* Wed Sep 22 2010 Tomas Kindl <supp@mandriva.org> 0.5.0-3mdv2011.0
++ Revision: 580620
+- fix missing music #59963
+
+* Wed Sep 09 2009 Thierry Vignaud <tv@mandriva.org> 0.5.0-2mdv2010.0
++ Revision: 434662
+- rebuild
+
+  + Emmanuel Andry <eandry@mandriva.org>
+    - New version
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.4.3-5mdv2009.0
++ Revision: 242920
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Thu Aug 23 2007 Thierry Vignaud <tv@mandriva.org> 0.4.3-3mdv2008.0
++ Revision: 70417
+- use %%mkrel
+
+
+* Thu Mar 03 2005 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.4.3-2mdk
+- split out music to own package to make it easier to maintain and making updates smaller
+- clean out some more files we have no interest in packagaing
+
+* Wed Feb 16 2005 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.4.3-1mdk
+- data version 0.4.3
+- some file cleaning..
+
+* Tue Oct 28 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.4.1-1mdk
+- data version 0.4.1
+- music version 0.3.1
+- rearranged files a little
+
+* Tue Apr 29 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 0.3.0-2mdk
+- be sure to own correct dirs (*hugs oliviers bot*)
+
+* Tue Apr 22 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 0.3.0-1mdk
+- initial mdk release
+
